@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/codeceptjs/bin/codecept.js run --steps"
+    "forever": "forever",
+    "e2e": "codeceptjs run --steps",
+    "test": "forever start index.js && npm run e2e && forever stopall",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "codeceptjs": "^0.4.16",
+    "forever": "^0.15.3",
+    "hapi": "^16.1.0",
     "nightmare": "^2.9.1",
     "nightmare-upload": "^0.1.1"
   }
