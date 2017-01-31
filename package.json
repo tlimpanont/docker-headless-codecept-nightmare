@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "codeceptjs": "codeceptjs",
-    "test": "npm run codeceptjs run --steps"
+    "test": "./node_modules/codeceptjs/bin/codecept.js run --steps"
   },
   "author": "",
   "license": "ISC",
