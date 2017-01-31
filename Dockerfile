@@ -12,4 +12,4 @@ WORKDIR /app
 
 RUN npm install
 
-CMD ./start.sh
+CMD ./test.sh
